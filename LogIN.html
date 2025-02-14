@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Sign Up page</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        h2{
+            font-size: 1.5vw;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .cards{
+            width: 40%;
+            height:80%;
+            background-color: white;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 10px;
+        }
+        @media (max-width: 1400px){
+            .cards{
+                overflow: auto;
+            }
+        }
+        @media (max-width: 1400px){
+            .cards{
+                width: 50%;
+            }
+        }
+        @media (max-width: 1000px){
+            .cards{
+                width: 60%;
+            }
+        }
+        @media (max-width: 700px){
+            .cards{
+                width: 70%;
+            }
+        }
+        @media (max-width: 550px){
+            .cards{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .hed{
+            margin-left:4vh;
+        }
+        .cards:hover{
+            box-shadow: 2px 2px 10px green;
+        }
+        .para1{
+            margin-left: 15vw;
+            font-size: 2.8vh;
+        }
+        .ank1{
+            text-decoration: none;
+            color: #34a853;
+            font-size: 2.8vh;
+            font-weight: bold;
+        }
+        .main-div{
+            height:10%;
+            width:85%;
+            display: flex;
+        }
+        .div1{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:8vh;
+        }
+        .div1 img{
+            height: 4vh;
+            margin-left:3vw;
+        }
+        .div1 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+
+        .div2{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:2vw;
+        }
+        .div2 img{
+            height:4vh;
+            width: 2vh;
+            margin-left:2vw;
+        }
+        .div2 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .main-div2{
+            height:2%;
+            width:85%;
+            margin-top:1vw;
+            display: flex;
+        }
+        .div3{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:8vh;
+        }
+        .div3 img{
+            height:4vh;
+            margin-left:3.5vw;
+        }
+        .div3 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .div4{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:2vw;
+        }
+        .div4 img{
+            height:4vh;
+            margin-left:4vw;
+        }
+        .div4 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .or{
+            font-size: 2.5vh;
+            text-align: center;
+        }
+        .inp1{
+            height:5vh;
+            width:75%;
+            border-radius: 8px;
+            margin-left:6vh;
+            padding-left:1vw;
+            font-size:2.3vh;
+            border: 2px solid rgb(135, 133, 133);
+        }
+        .inp1:hover{
+            box-shadow: 2px 2px 10px indianred;
+        }
+        .inp2{
+            height:5vh;
+            width:75%;
+            border-radius: 8px;
+            margin-left:6vh;
+            padding-left:1vw;
+            font-size:2.3vh;
+            margin-top: 2vh;
+            border: 2px solid rgb(135, 133, 133);
+        }
+        .inp2:hover{
+            box-shadow: 2px 2px 10px indianred;
+        }
+
+        .submit{
+            display: flex;
+            margin-left:10vh;
+            margin-top: 6vh;
+        }
+        .buttn1{
+            height: 6vh;
+            width:25vh;
+            margin-left:2vh;
+            color: white;
+            border: none;
+            font-size:2.5vh;
+            font-weight: 700;
+            background-color: #04aa6d;
+            border-radius: 10px;
+        }
+        .buttn1:hover{
+            background-color: #0ccf88;
+            cursor: pointer;
+        }
+        .buttn2{
+            height: 6vh;
+            width:25vh;
+            border: 1px solid rgb(135, 133, 133);
+            font-size:2.5vh;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+        .buttn2:hover{
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+        @media (max-width: 550px){
+            .inp1{
+                width:80%;
+                margin-left:4vh;
+            }
+            .inp2{
+                width:80%;
+                margin-left:4vh;
+            }
+            .main-div{
+               height:10%;
+               width:100%;
+            }
+            .div1{
+               width:45%;
+               height:5vh;
+               margin-left:2vh;
+            }
+            .div1 img{
+               margin-left:8vh;
+            }  
+            .div2{
+               width:45%;
+               margin-left:1vw;
+            }
+            .div2 img{
+               margin-left:6vh;
+            }
+            .main-div2{
+                width:100%;
+            }
+            .div3{
+               width:45%;
+               margin-left:2vh;
+            }
+            .div3 img{           
+                margin-left:9vh;
+            }      
+            .div4{
+                width:45%;
+                margin-left:1vw;
+            }
+            .div4 img{          
+                margin-left:9vh;
+            }
+            .para1{
+                margin-left: 22vw;
+            }
+            .submit{
+                margin-left:2vh;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cards">
+           <form action="/index.html">
+            <h1 class="hed">Log in</h1>
+            <p class="para1">Don't have an account? <a href="/SignUP.html" class="ank1">Sign Up</a></p>
+            <div class="main-div">
+                <div class="div1">
+                   <h2>Google</h2>
+                   <img src="/Imaiges/google.png">
+                </div>
+                <div class="div2">
+                    <h2>Facebook</h2>
+                    <img src="/Imaiges/facebook.png">
+                 </div>
+            </div>
+            <div class="main-div2">
+                <div class="div3">
+                   <h2>Github</h2>
+                   <img src="/Imaiges/github.png">
+                </div>
+                <div class="div4">
+                    <h2>Feide</h2>
+                    <img src="/Imaiges/feide.png">
+                 </div>
+            </div>
+            <h2 class="or">OR</h2>
+            <input type="email" placeholder="email" required class="inp1">
+            <input type="password" placeholder="password" required class="inp2">
+            <div class="submit">
+                <div><a href="#"><button class="buttn2">Forgot Password?</button></a></div>
+                <div><button class="buttn1">Log in</button></div>
+            </div>
+           </form>
+        </div>
+    </div>
+</body>
+</html>

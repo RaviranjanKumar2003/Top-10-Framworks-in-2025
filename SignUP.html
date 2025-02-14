@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Sign Up page</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        h2{
+            font-size: 1.5vw;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .cards{
+            width: 40%;
+            height:95%;
+            background-color: white;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 10px;
+        }
+        @media (max-width: 1400px){
+            .cards{
+                overflow: auto;
+            }
+        }
+        @media (max-width: 1400px){
+            .cards{
+                width: 50%;
+            }
+        }
+        @media (max-width: 1000px){
+            .cards{
+                width: 60%;
+            }
+        }
+        @media (max-width: 700px){
+            .cards{
+                width: 70%;
+            }
+        }
+        @media (max-width: 550px){
+            .cards{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .hed{
+            margin-left:4vh;
+        }
+        .cards:hover{
+            box-shadow: 2px 2px 10px green;
+        }
+        .para1{
+            margin-left: 15vw;
+            font-size: 2.8vh;
+        }
+        .ank1{
+            text-decoration: none;
+            color: #34a853;
+            font-size: 2.8vh;
+            font-weight: bold;
+        }
+        .main-div{
+            height:10%;
+            width:85%;
+            display: flex;
+        }
+        .div1{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:8vh;
+        }
+        .div1 img{
+            height: 4vh;
+            margin-left:3vw;
+        }
+        .div1 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+
+        .div2{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:2vw;
+        }
+        .div2 img{
+            height:4vh;
+            width: 2vh;
+            margin-left:2vw;
+        }
+        .div2 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .main-div2{
+            height:2%;
+            width:85%;
+            margin-top:1vw;
+            display: flex;
+        }
+        .div3{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:8vh;
+        }
+        .div3 img{
+            height:4vh;
+            margin-left:3.5vw;
+        }
+        .div3 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .div4{
+            width:40%;
+            height:5vh;
+            display: flex;
+            align-items: center;
+            border: 2px solid rgb(135, 133, 133);
+            border-radius: 8px;
+            margin-left:2vw;
+        }
+        .div4 img{
+            height:4vh;
+            margin-left:4vw;
+        }
+        .div4 h2{
+            font-size: 3vh;
+            margin-left:1vh;
+        }
+        .or{
+            font-size: 2.5vh;
+            text-align: center;
+        }
+        .inp1{
+            height:5vh;
+            width:80%;
+            border-radius: 8px;
+            margin-left:4vh;
+            padding-left:1vw;
+            font-size:2.3vh;
+            border: 2px solid rgb(135, 133, 133);
+        }
+        .inp2{
+            height:5vh;
+            width:80%;
+            border-radius: 8px;
+            margin-top:.5vw;
+            margin-left:4vh;
+            padding-left:1vw;
+            font-size: 2.3vh;
+            border: 2px solid rgb(135, 133, 133);
+        }
+        .inp2:hover{
+            box-shadow: 2px 2px 10px indianred;
+        }
+        .inp1:hover{
+            box-shadow: 2px 2px 10px indianred;
+        }
+        .buttn1{
+            margin-top:2vw;
+            height:6vh;
+            width:85%;
+            margin-left:4vh;
+            color: white;
+            border: none;
+            font-size: 3vh;
+            font-weight: 700;
+            background-color: #04aa6d;
+            border-radius: 10px;
+        }
+        .buttn1:hover{
+            background-color: #0ccf88;
+            cursor: pointer;
+        }
+        .para2{
+            text-align: center;
+            font-size:3vh;
+            font-weight: 500;
+        }
+        .checkbox{
+            text-align: center;
+            font-size: 2.6vh;
+            font-weight: 400;
+            color: black;
+        }
+        .para2-ank{
+            color: blue;
+        }
+        input[type="checkbox"] {
+            zoom: 1.4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cards">
+           <form action="/LogIN.html">
+            <h1 class="hed">Sign Up</h1>
+            <p class="para1">Already have an account? <a href="/LogIN.html" class="ank1">Log in</a></p>
+            <div class="main-div">
+                <div class="div1">
+                   <h2>Google</h2>
+                   <img src="/Imaiges/google.png">
+                </div>
+                <div class="div2">
+                    <h2>Facebook</h2>
+                    <img src="/Imaiges/facebook.png">
+                 </div>
+            </div>
+            <div class="main-div2">
+                <div class="div3">
+                   <h2>Github</h2>
+                   <img src="/Imaiges/github.png">
+                </div>
+                <div class="div4">
+                    <h2>Feide</h2>
+                    <img src="/Imaiges/feide.png">
+                 </div>
+            </div>
+            <h2 class="or">OR</h2>
+            <input type="email" placeholder="email" required class="inp1">
+            <input type="password" placeholder="password" required class="inp2">
+            <input type="text" placeholder="first name" required class="inp2">
+            <input type="text" placeholder="last name" required class="inp2">
+            <button type="submit" class="buttn1">Sign Up</button>
+            <p class="para2">By signing up you agree to our <a href="#" class="para2-ank">Terms of Service</a> and <a href="#" class="para2-ank">Privacy Policy</a></p>
+            <div class="checkbox">
+                <input type="checkbox" class="in">
+                <label for="text">Email me with news and updates</label>
+            </div>
+           </form>
+        </div>
+    </div>
+</body>
+</html>
