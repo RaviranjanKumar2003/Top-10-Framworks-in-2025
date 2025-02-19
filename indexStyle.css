@@ -621,6 +621,8 @@ input:focus {
 
 .bar1{
     display: none;
+    position: fixed;
+    background-color: #282a35;
 }
 @media (max-width: 626px){
     .bar1{
@@ -681,8 +683,6 @@ input:focus {
     color: #088cc7;
     cursor: pointer;
 }
-
-
 .p2-r4-img1{
     width: 100%;
 }
@@ -707,7 +707,14 @@ input:focus {
     margin: 10px;
 }
 .p2-r4-ul li::marker{
-    content:"🟢";
+    font-size: 2vmax;
+    color: green;
+}
+@media (max-width: 900px){
+    .p2-r4-ul li::marker{
+        font-size: 4vmax;
+        color: green;
+    }
 }
 .js-div{
     background-image: url(/Imaiges/bg2.jpg);
