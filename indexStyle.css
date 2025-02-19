@@ -756,6 +756,13 @@ input:focus {
     height: 3.5vw;
     width: 3.5vw;
 }
+@media (max-width: 450px){
+    .programming img{
+        margin-top: 2vw;
+        height: 5vw;
+        width: 5vw;
+    }
+}
 .programming h1{
     margin-left: .5vw;
 }
