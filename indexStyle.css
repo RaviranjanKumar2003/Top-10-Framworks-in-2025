@@ -761,7 +761,7 @@ input:focus {
 }
 @media (max-width: 450px){
     .programming img{
-        margin-top: 2vw;
+        margin-top: 2.5vw;
         height: 10vw;
         width: 10vw;
     }
